@@ -35,7 +35,7 @@ tagline: 部落捐收无要求，竞赛每人至少500。捐兵一千，满竞�
     <td>{{ member.badgeUrls.small }}</td>
     <td>{{ member.tag }}</td>
     <td>{{ member.name }}</td>
-    <td>{{ member.role }}</td>
+    <td>{{ member.role | replace: "leader","首领" | replace: "coLeader","副首领" | replace: "admin","长老" | replace: "member","成员" }}</td>
     <td>{{ member.expLevel }}</td>
     <td>{{ member.trophies}}</td>
     <td>{{ member.versusTrophies}}</td>
@@ -78,8 +78,7 @@ tagline: 部落捐收无要求，竞赛每人至少500。捐兵一千，满竞�
     <td>{{ member.badgeUrls.small }}</td>
     <td>{{ member.tag }}</td>
     <td>{{ member.name }}</td>
-    <td>{{ member.role }}</td>
-    <td>{{ member.expLevel }}</td>
+    <td>{{ member.role | replace: "leader","首领" | replace: "coLeader","副首领" | replace: "admin","长老" | replace: "member","成员" }}</td>    <td>{{ member.expLevel }}</td>
     <td>{{ member.trophies}}</td>
     <td>{{ member.versusTrophies}}</td>
     <td>{{ member.donations }}</td>
@@ -121,7 +120,7 @@ tagline: 部落捐收无要求，竞赛每人至少500。捐兵一千，满竞�
     <td>{{ member.badgeUrls.small }}</td>
     <td>{{ member.tag }}</td>
     <td>{{ member.name }}</td>
-    <td>{{ member.role }}</td>
+    <td>{{ member.role | replace: "leader","首领" | replace: "coLeader","副首领" | replace: "admin","长老" | replace: "member","成员" }}</td>
     <td>{{ member.expLevel }}</td>
     <td>{{ member.trophies}}</td>
     <td>{{ member.versusTrophies}}</td>
